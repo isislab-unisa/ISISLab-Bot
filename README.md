@@ -86,34 +86,84 @@ Google:
 
 Navigate su questa pagina [Discord Developer Portal](https://discord.com/developers/applications "") ed accedete con le vostre credenziali. Dovreste trovarvi di fronte ad una schermata come questa:
 
-<p align="left">
-  <img width=1024 height=auto src="https://github.com/isislab-unisa/ISISLab-Bot/blob/main/imgs/discord-setup/setup_1.PNG?raw=true" alt=""/>
+<p align="center">
+  <img src="https://github.com/isislab-unisa/ISISLab-Bot/blob/main/imgs/discord-setup/setup_1.PNG?raw=true" alt=""/>
 </p>
+
+</br>
 
 Cliccate adesso su **New Application** e nel Popup che verrà mostrato, inserire il nome della vostra nuova applicazione.
 Una volta nella schermata di configurazione, provvedete ad inserire Immagine, Descrizione ed altre informazioni utili.
 
-<p align="left">
-  <img width=1024 height=auto src="https://github.com/isislab-unisa/ISISLab-Bot/blob/main/imgs/discord-setup/setup_2.PNG?raw=true" alt=""/>
+<p align="center">
+  <img src="https://github.com/isislab-unisa/ISISLab-Bot/blob/main/imgs/discord-setup/setup_2.PNG?raw=true" alt=""/>
 </p>
+
+</br>
 
 Rechiamoci adesso nella sezione **Bot** nel menu laterale e nella nuova pagina che ci viene mostrata, clicchiamo su **Add Bot** confermando il popup che ci viene mostrato. Iniziamo subito premendo il pulsante **Reset Token** così che ce ne venga mostrato uno nuovo e copiamo il Token appena generato all'interno del nostro file di configurazione.
 
-<p align="left">
-  <img width=1024 height=auto src="https://github.com/isislab-unisa/ISISLab-Bot/blob/main/imgs/discord-setup/setup_3.PNG?raw=true" alt=""/>
+<p align="center">
+  <img src="https://github.com/isislab-unisa/ISISLab-Bot/blob/main/imgs/discord-setup/setup_3.PNG?raw=true" alt=""/>
 </p>
 
+</br>
+
 Una volta salvato il nostro Token, rechiamoci nella sezione **Privileged Gateway Intents** poco più sotto ed abilitiamo tutti i permessi mostrati in tale sezione.
-* PRESENCE INTENT
-* SERVER MEMBERS INTENT
-* MESSAGE CONTENT INTENT
+* Presence Intent
+* Server Members Intent
+* Message Content Intent
 
 Salviamo quindi tutti i cambiamenti effettuati fino a questo punto.
 
 Rechiamoci adesso nella sezione **OAuth2** e navighiamo in **URL Generator**. Nella nuova finestra che ci comparirà, selezioniamo come **Scopes** la checkbox **Bot** e nella nuova lista che ci comparirà, selezioniamo **Administrator**
 
-<p align="left">
-  <img width=1024 height=auto src="https://github.com/isislab-unisa/ISISLab-Bot/blob/main/imgs/discord-setup/setup_4.PNG?raw=true" alt=""/>
+<p align="center">
+  <img src="https://github.com/isislab-unisa/ISISLab-Bot/blob/main/imgs/discord-setup/setup_4.PNG?raw=true" alt=""/>
 </p>
 
+</br>
+
 Una volta selezionato tutto il necessario, in basso ci comparirà un URL che ci servirà per invitare il nostro Bot all'interno del nostro server. A questo punto, potete scegliere di utilizzare tale link adesso, incollandolo nel vostro browser e selezionando il vostro server di riferimento, oppure utilizzarlo al termine di questa guida. A voi la scelta.
+
+### Configurazione server e canale discord
+
+Una delle funzionalità offerte dal Bot è la possibilità di notificare in un apposito canale, dentro un apposito server, i seminari che sono stati programmati. Per rendere tutto funzionante, ci occorre prendere gli **ID Unici** sia del nostro server che del nostro canale di riferimento. Di seguito verrà spiegato come fare.
+
+Rechiamoci all'interno dell'applicazione di Discord e clicchiamo sull'ingranaggio in basso a sinistra, di fianco al nostro nome utente. Una volta nelle impostazioni, clicchiamo sul tab **Avanzate** e una volta all'interno, abilitiamo la **Modalità Sviluppatore**
+
+<p align="center">
+  <img src="https://github.com/isislab-unisa/ISISLab-Bot/blob/main/imgs/discord-setup/setup_5.PNG?raw=true" alt=""/>
+</p>
+
+</br>
+
+Adesso, non ci resta che cliccare col tasto destro sul nostro server / canale per poter copiare l'**ID** di riferimento.
+
+<p align="center">
+  <img src="https://github.com/isislab-unisa/ISISLab-Bot/blob/main/imgs/discord-setup/setup_6.PNG?raw=true" alt=""/>
+</p>
+
+</br>
+
+Copiati entrambi gli ID, non ci rimane che incollarli tutti nel nostro file di riferimento.
+**ATTENZIONE**: Nel file di configurazione, nella sezione **Seminars** sono presenti due trattini '**-**' che devono racchiudere il nostro ID. Fate attenzione a non cancellarli poiché potreste incorrere in errori durante l'utilizzo del Bot
+
+<p align="center">
+  <img src="https://github.com/isislab-unisa/ISISLab-Bot/blob/main/imgs/discord-setup/setup_7.PNG?raw=true" alt=""/>
+</p>
+
+</br>
+
+### Gestione Invio Mail con GMail
+
+Un ulteriore importante aspetto del bot è senza dubbio l'invio delle mail una volta prenotato un seminario. Tale funzionalità consente una notifica istantanea nel caso di una prenotazione di un seminario, così che si possa facilmente creare un evento e finalizzare il tutto.
+
+Per raggiungere tale obiettivo, dobbiamo definire, nella sezione dedicata a Gmail nel file di configurazione, la mail del **Mittente** (From) e la mail del **Destinatario** (To). Per fare ciò, ci basta semplicemente inserire le nostre mail all'interno dei relativi campi. Bisogna prestare attenzione ad inserire nel campo **From** una mail Google, altrimenti si rieschia di incorrere in errori. Per la sezione **To**, invece, è possibile utilizzare una qualsiasi email.
+
+Per la sezione **Password** bisogna fare qualche passaggio in più, che verrà spiegato di seguito.
+Eseguiamo il login con il nostro account Google e rechiamoci nelle impostazioni del nostro account. Una volta arrivati nelle impostazioni del nostro account, rechiamoci nella sezione **Sicurezza** e clicchiamo su **Password per le app**.
+
+Procediamo quindi a generare una nuova Password seguendo tutti i passaggi elencati da Google. Una volta generata tale password, la possiamo incollare nell'apposita sezione nel nostro file di testo.
+
+### Gestione API Google Calendar
