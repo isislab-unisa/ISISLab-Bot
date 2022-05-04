@@ -1,0 +1,38 @@
+﻿{
+  BotToken: <discord_bot_token>
+
+  Logging:
+  {
+    Name: helpdesk
+    Directory: logs
+    Level: Information
+  }
+
+  AI:
+  {
+    BaseUrl: http://<ip-address>:5000/
+  }
+
+  Seminars:
+  {
+    ServerId: -<server-id>-
+    ChannelId: -<channel-id>-
+    NotifyWithin: 3
+  }
+
+  Google:
+  {
+    Calendar:
+    {
+      APIKey: <api-key>
+      CalendarId: <calendar-email>
+    }
+
+    Gmail:
+    {
+      From: <from-mail>
+      To: <to-mail>
+      Password: <app-password>
+    }
+  }
+}

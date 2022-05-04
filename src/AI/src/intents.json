@@ -1,0 +1,546 @@
+{
+  "intents": [
+    {
+      "tag": "none",
+      "patterns": [
+      ],
+      "responses": [
+        "None"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "calendario",
+      "patterns": [
+        "prossimi eventi",
+        "prossimo evento",
+        "prossimo evento in laboratorio",
+        "prossimo seminario",
+        "quando ci sarà il prossimo evento?",
+        "quando ci sarà il prossimo seminario?",
+        "quando posso vedere un seminario",
+        "seminari da vedere",
+        "seminari in programma",
+        "voglio assistere ad un seminario",
+        "calendario",
+        "calendario degli eventi",
+        "eventi",
+        "eventi fuori",
+        "eventi in programma",
+        "programma",
+        "programma degli eventi"
+      ],
+      "responses": [
+        "Calendario"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "informazioni",
+      "patterns": [
+        "dammi più informazioni sul laboratorio",
+        "qual è il sito del laboratorio?",
+        "quali temi trattate",
+        "sono un futuro studente della magistrale",
+        "sono un nuovo membro",
+        "sono un nuovo tesista",
+        "sono uno studente",
+        "sono uno studente della magistrale",
+        "sono uno studente della magistrale in cloud computing",
+        "sono uno studente della triennale",
+        "che argomenti sono trattati in laboratorio?",
+        "cosa si fa in isislab?",
+        "cosa si fa in isislab",
+        "dammi il sito del laboratorio",
+        "dammi più informazioni su isislab"
+      ],
+      "responses": [
+        "Informazioni"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "prenotazione",
+      "patterns": [
+        "come posso tenere un mio seminario?",
+        "devo prenotare un seminario",
+        "manda una mail",
+        "prenota",
+        "prenotami un seminario",
+        "prenotazione",
+        "prenotazione di un nuovo seminario",
+        "voglio mandare una mail",
+        "voglio prenotare un seminario",
+        "voglio tenere un seminario",
+        "come posso prenotare un seminario?"
+      ],
+      "responses": [
+        "Prenotazione"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "seminari",
+      "patterns": [
+        "cosa posso sapere sui seminari",
+        "cosa puoi fare riguardo i seminari",
+        "cosa sono i seminari",
+        "dammi informazioni sui seminari",
+        "dimmi di più sui seminari",
+        "parlami dei seminari",
+        "seminario",
+        "voglio informazioni sui seminari"
+      ],
+      "responses": [
+        "Seminari"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "social",
+      "patterns": [
+        "dove posso contattare un membro del laboratorio?",
+        "dove posso trovare isislab",
+        "dove seguo i seminari",
+        "dove si svolgono gli eventi del laboratorio",
+        "dove trovo i seminari?",
+        "dove trovo il laboratorio virtuale?",
+        "esiste un canale ufficiale del laboratorio?",
+        "inviami il link al discord del laboratorio",
+        "quali sono i canali social del laboratorio?",
+        "voglio entrare a far parte del laboratorio",
+        "canale discord",
+        "come contatto isislab?",
+        "come contatto un membro dell' isislab",
+        "come si tengono in comunicazione i membri del laboratorio?",
+        "discord"
+      ],
+      "responses": [
+        "Social"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "thesis",
+      "patterns": [
+        "aiutami sulla tesi",
+        "ho bisogno di qualche informazione sulla tesi",
+        "come posso scrivere la mia tesi con il laboratorio",
+        "avrei bisogno di aiuto con la tesi",
+        "voglio qualche informazione con la tesi",
+        "in che modo posso scrivere la tesi",
+        "sono prossimo alla laurea, come posso fare?",
+        "mi potete aiutare con la tesi",
+        "argomenti utili per la tesi",
+        "dove trovo qualche informazione sulla tesi",
+        "tesi con il laboratorio",
+        "voglio fare qui la mia tesi"
+      ],
+      "responses": [
+        "Thesis"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "intership",
+      "patterns": [
+        "come posso fare il tirocinio in isislab",
+        "come fare il tirocinio qui",
+        "ho bisogno di informazioni sui tirocini",
+        "come funzionano i tirocini qui",
+        "in che modo posso richiedere il tirocinio col laboratorio",
+        "vorrei fare il mio tirocinio qui",
+        "info sui tirocini",
+        "un mio amico ha chiesto un tirocinio presso il laboratorio, come posso fare?",
+        "aiutami sul tirocinio",
+        "dammi qualche info sui tirocini",
+        "info tirocinio"
+      ],
+      "responses": [
+        "Intership"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "utilities.cancel",
+      "patterns": [
+        "non fare niente",
+        "non fare nulla per favore",
+        "non farlo",
+        "non farlo più",
+        "non importa annulla",
+        "non importa annullalo",
+        "oh annulla",
+        "oh non farlo",
+        "scusa, non farlo",
+        "vai via",
+        "annullalo",
+        "annullalo e basta",
+        "annullato",
+        "dimenticatelo",
+        "niente grazie",
+        "niente non importa",
+        "no annulla annulla",
+        "no no annulla",
+        "no no annullalo",
+        "no non importa",
+        "annulla",
+        "annulla annulla",
+        "annulla app",
+        "annulla e basta",
+        "annulla non importa"
+      ],
+      "responses": [
+        "Utilities.Cancel"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "utilities.confirm",
+      "patterns": [
+        "si fai pure",
+        "si figo",
+        "si fratello",
+        "si grazie",
+        "si procedi",
+        "si va bene",
+        "sicuramente",
+        "sicuro",
+        "sono certo",
+        "va bene grazie",
+        "molto bene",
+        "oh si",
+        "ok per ora",
+        "ottimo",
+        "per me va bene",
+        "perfetto",
+        "questo va bene",
+        "senza dubbio",
+        "si amore",
+        "si certo",
+        "certamente",
+        "conferma",
+        "corretto",
+        "di sicuro",
+        "è corretto",
+        "fai pure",
+        "fantastico",
+        "giusto",
+        "grazie mille"
+      ],
+      "responses": [
+        "Utilities.Confirm"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "utilities.escalate",
+      "patterns": [
+        "contatta il supporto",
+        "ho bisogno di supporto",
+        "ho bisogno di un servizio clienti manuale",
+        "ho bisogno di un vero aiuto umano",
+        "parla con un umano",
+        "posso parlare con una persona",
+        "servizio clienti",
+        "servizio umano",
+        "voglio parlare con un umano",
+        "voglio parlare con un vero umano",
+        "c'è qualcuno con cui posso parlare",
+        "c'è un vero essere umano",
+        "c'è una vera persona",
+        "contatta il servizio clienti"
+      ],
+      "responses": [
+        "Utilities.Escalate"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "utilities.finishtask",
+      "patterns": [
+        "fatto",
+        "finisci",
+        "finito",
+        "finito con",
+        "ho fatto",
+        "invia",
+        "invialo",
+        "si e basta",
+        "tutto finito",
+        "tutto pronto"
+      ],
+      "responses": [
+        "Utilities.FinishTask"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "utilities.goback",
+      "patterns": [
+        "indietro",
+        "indietro per favore",
+        "no no vai indietro",
+        "no vai indietro a",
+        "ritorna",
+        "torna a",
+        "torna all'ultimo passo",
+        "torna indietro a",
+        "ultimo passo",
+        "vai indietro"
+      ],
+      "responses": [
+        "Utilities.GoBack"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "utilities.help",
+      "patterns": [
+        "apri la guida d'aiuto",
+        "chi mi può aiutare",
+        "come farlo",
+        "come posso ottenerlo",
+        "dammi una mano",
+        "ho bisogno di aiuto",
+        "ho bisogno di assistenza",
+        "puoi aiutarmi",
+        "puoi essere d'aiuto",
+        "qualche aiuto",
+        "aiutami per favore",
+        "aiuto"
+      ],
+      "responses": [
+        "Utilities.Help"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "utilities.reject",
+      "patterns": [
+        "non",
+        "non esattamente",
+        "non in questo momento",
+        "non mi piace",
+        "non molto",
+        "non ora",
+        "non proprio",
+        "non quello",
+        "oh no",
+        "rifiuto",
+        "no lascialo",
+        "no no",
+        "no no grazie",
+        "no no no",
+        "no non lo voglio",
+        "no non più",
+        "no non quello",
+        "no più tardi",
+        "no rifiutalo",
+        "no sbagliato",
+        "assolutamente no",
+        "mai",
+        "neanche lontanamente",
+        "negativo",
+        "niente affatto"
+      ],
+      "responses": [
+        "Utilities.Reject"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "utilities.repeat",
+      "patterns": [
+        "cos'è che hai detto",
+        "di nuovo",
+        "non ho sentito",
+        "non ho sentito, ripetilo di nuovo",
+        "potresti dirlo di nuovo",
+        "ripeti",
+        "ripeti per favore",
+        "ripetilo",
+        "ripetilo per favore",
+        "scusa",
+        "che cosa hai detto",
+        "cosa"
+      ],
+      "responses": [
+        "Utilities.Repeat"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "utilities.selectany",
+      "patterns": [
+        "scegli una a caso",
+        "scegli uno qualsiasi",
+        "seleziona una qualsiasi",
+        "seleziona una scelta a caso",
+        "seleziona una scelta qualsiasi",
+        "seleziona uno a caso",
+        "seleziona uno qualsiasi",
+        "uno qualsiasi",
+        "uno qualsiasi è ok",
+        "va bene uno qualsiasi",
+        "opta per uno a caso",
+        "opta per uno qualsiasi",
+        "qualsiasi"
+      ],
+      "responses": [
+        "Utilities.SelectAny"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "utilities.selectnone",
+      "patterns": [
+        "nessuno dei due",
+        "nessuno di loro grazie",
+        "nessuno grazie",
+        "nessuno nessuno",
+        "nessuno nessuno di loro",
+        "non sembrano buone, puoi darmi altre scelte",
+        "non voglio nessuno dei due",
+        "non voglio nessuno di loro",
+        "non voglio scegliere nessuno",
+        "non voglio selezionare nessuno",
+        "neanche"
+      ],
+      "responses": [
+        "Utilities.SelectNone"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "utilities.shownext",
+      "patterns": [
+        "mostra il successivo",
+        "mostra le due opzioni successive",
+        "mostrami di più",
+        "mostrami il successivo",
+        "passa a quello successivo",
+        "quali sono i prossimi 2",
+        "rivela di più",
+        "vai ai tre oggetti successivi",
+        "vai al successivo",
+        "voglio di più",
+        "cosa c'è di più",
+        "cosa c'è dopo",
+        "cosa viene dopo",
+        "di più",
+        "dimmi di più",
+        "dopodiché",
+        "ho bisogno di andare a quello successivo",
+        "mostra di più",
+        "mostra i 4 elementi successivi",
+        "mostra i prossimi 3",
+        "che cosa c'è dopo",
+        "che mi dici di quello dopo"
+      ],
+      "responses": [
+        "Utilities.ShowNext"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "utilities.startover",
+      "patterns": [
+        "azzera e ricomincia",
+        "potresti ricominciare da capo",
+        "riavvia",
+        "riavvialo",
+        "ricomincia",
+        "ricomincia da capo",
+        "ricomincia per favore",
+        "volta pagina"
+      ],
+      "responses": [
+        "Utilities.StartOver"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "utilities.stop",
+      "patterns": [
+        "ok basta basta",
+        "silenzio",
+        "silenzio ora",
+        "spegni stop",
+        "taci",
+        "taci fa silenzio",
+        "taci silenzio",
+        "uscire stop",
+        "uscire uscire",
+        "voglio dire smetti di ascoltare",
+        "mi piacerebbe che smettessi di parlare",
+        "mio dio sta zitto",
+        "no basta",
+        "no fa silenzio",
+        "no fa silenzio ora",
+        "no no no no smettila di parlare",
+        "no sta zitto",
+        "non importa a nessuno, smettila di parlare",
+        "non importa stop",
+        "oh mio dio sta zitto",
+        "basta parlare",
+        "basta per favore",
+        "chiudi il becco",
+        "da nessuna parte fai silenzio",
+        "dai smettila",
+        "dio sta zitto",
+        "ehi basta",
+        "fa silenzio",
+        "fa silenzio ora",
+        "ho detto basta",
+        "amore fa silenzio"
+      ],
+      "responses": [
+        "Utilities.Stop"
+      ],
+      "context": [
+        ""
+      ]
+    }
+  ]
+}
