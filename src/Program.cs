@@ -50,7 +50,7 @@
       Quartz.Logging.LogProvider.IsDisabled = true;
       var discordClient = new DiscordSocketClient(new DiscordSocketConfig
       {
-        LogLevel = LogSeverity.Verbose,
+        LogLevel = LogSeverity.Info,
 
         MessageCacheSize    = 150,
         AlwaysDownloadUsers = false
@@ -58,7 +58,7 @@
 
       var commandService = new CommandService(new CommandServiceConfig
       {
-        LogLevel = LogSeverity.Verbose,
+        LogLevel = LogSeverity.Info,
 
         IgnoreExtraArgs       = true,
         CaseSensitiveCommands = false
