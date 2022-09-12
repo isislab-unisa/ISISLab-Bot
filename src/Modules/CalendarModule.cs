@@ -81,7 +81,7 @@
                 .WithValue(events[index].StartDate?.ToString(" dd MMMM yyyy - HH:mm") ?? "Tutto il giorno"))
               .WithFields(new EmbedFieldBuilder()
                 .WithName("Luogo")
-                .WithValue(events[index].Location))
+                .WithValue(events[index]?.Location ?? "ISISLab"))
               .WithFields(new EmbedFieldBuilder()
                 .WithName("Descrizione")
                 .WithValue(fieldSummary))
