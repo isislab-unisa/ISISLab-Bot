@@ -22,19 +22,23 @@
   {
     private static void Main()
     {
+      int r = 200;
+      int g = 72;
+      int b = 149;
+
       Console.WriteLine();
-      Console.WriteLine(@" -------------------------------------------------------------------------- ", System.Drawing.Color.OrangeRed);
-      Console.WriteLine(@"  /$$   /$$           /$$           /$$$$$$$                      /$$       ", System.Drawing.Color.OrangeRed);
-      Console.WriteLine(@" | $$  | $$          | $$          | $$__  $$                    | $$       ", System.Drawing.Color.OrangeRed);
-      Console.WriteLine(@" | $$  | $$  /$$$$$$ | $$  /$$$$$$ | $$  \ $$  /$$$$$$   /$$$$$$$| $$   /$$ ", System.Drawing.Color.OrangeRed);
-      Console.WriteLine(@" | $$$$$$$$ /$$__  $$| $$ /$$__  $$| $$  | $$ /$$__  $$ /$$_____/| $$  /$$/ ", System.Drawing.Color.OrangeRed);
-      Console.WriteLine(@" | $$__  $$| $$$$$$$$| $$| $$  \ $$| $$  | $$| $$$$$$$$|  $$$$$$ | $$$$$$/  ", System.Drawing.Color.OrangeRed);
-      Console.WriteLine(@" | $$  | $$| $$_____/| $$| $$  | $$| $$  | $$| $$_____/ \____  $$| $$_  $$  ", System.Drawing.Color.OrangeRed);
-      Console.WriteLine(@" | $$  | $$|  $$$$$$$| $$| $$$$$$$/| $$$$$$$/|  $$$$$$$ /$$$$$$$/| $$ \  $$ ", System.Drawing.Color.OrangeRed);
-      Console.WriteLine(@" |__/  |__/ \_______/|__/| $$____/ |_______/  \_______/|_______/ |__/  \__/ ", System.Drawing.Color.OrangeRed);
-      Console.WriteLine(@"                         | $$                                               ", System.Drawing.Color.OrangeRed);
-      Console.WriteLine(@" ------ [ISISLab] ------ | $$ ---- (Developed by Daniele De Falco) -------- ", System.Drawing.Color.OrangeRed);
-      Console.WriteLine(@"                         |__/                                               ", System.Drawing.Color.OrangeRed);
+      Console.WriteLine(@" -------------------------------------------------------------------------- ", System.Drawing.Color.FromArgb(r, g, b)); r -= 18; b -= 9;
+      Console.WriteLine(@"  /$$   /$$           /$$           /$$$$$$$                      /$$       ", System.Drawing.Color.FromArgb(r, g, b)); r -= 18; b -= 9;
+      Console.WriteLine(@" | $$  | $$          | $$          | $$__  $$                    | $$       ", System.Drawing.Color.FromArgb(r, g, b)); r -= 18; b -= 9;
+      Console.WriteLine(@" | $$  | $$  /$$$$$$ | $$  /$$$$$$ | $$  \ $$  /$$$$$$   /$$$$$$$| $$   /$$ ", System.Drawing.Color.FromArgb(r, g, b)); r -= 18; b -= 9;
+      Console.WriteLine(@" | $$$$$$$$ /$$__  $$| $$ /$$__  $$| $$  | $$ /$$__  $$ /$$_____/| $$  /$$/ ", System.Drawing.Color.FromArgb(r, g, b)); r -= 18; b -= 9;
+      Console.WriteLine(@" | $$__  $$| $$$$$$$$| $$| $$  \ $$| $$  | $$| $$$$$$$$|  $$$$$$ | $$$$$$/  ", System.Drawing.Color.FromArgb(r, g, b)); r -= 18; b -= 9;
+      Console.WriteLine(@" | $$  | $$| $$_____/| $$| $$  | $$| $$  | $$| $$_____/ \____  $$| $$_  $$  ", System.Drawing.Color.FromArgb(r, g, b)); r -= 18; b -= 9;
+      Console.WriteLine(@" | $$  | $$|  $$$$$$$| $$| $$$$$$$/| $$$$$$$/|  $$$$$$$ /$$$$$$$/| $$ \  $$ ", System.Drawing.Color.FromArgb(r, g, b)); r -= 18; b -= 9;
+      Console.WriteLine(@" |__/  |__/ \_______/|__/| $$____/ |_______/  \_______/|_______/ |__/  \__/ ", System.Drawing.Color.FromArgb(r, g, b)); r -= 18; b -= 9;
+      Console.WriteLine(@"                         | $$                                               ", System.Drawing.Color.FromArgb(r, g, b)); r -= 18; b -= 9;
+      Console.WriteLine(@" ------ [ISISLab] ------ | $$ ---- (Developed by Daniele De Falco) -------- ", System.Drawing.Color.FromArgb(r, g, b)); r -= 18; b -= 9;
+      Console.WriteLine(@"                         |__/                                               ", System.Drawing.Color.FromArgb(r, g, b)); r -= 18; b -= 9;
       Console.WriteLine();
 
       var baseDirectory = Environment.GetEnvironmentVariable("HELPDESK_BASEDIR");
