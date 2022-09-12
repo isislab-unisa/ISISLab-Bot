@@ -166,4 +166,85 @@ Eseguiamo il login con il nostro account Google e rechiamoci nelle impostazioni 
 
 Procediamo quindi a generare una nuova Password seguendo tutti i passaggi elencati da Google. Una volta generata tale password, la possiamo incollare nell'apposita sezione nel nostro file di testo.
 
+<p align="center">
+  <img src="https://github.com/isislab-unisa/ISISLab-Bot/blob/main/imgs/gmail-setup/setup_1.PNG?raw=true" alt=""/>
+</p>
+
+</br>
+
 ### Gestione API Google Calendar
+
+L'ultimo step prima di un completo funzionamento del Bot consiste nella creazione e gestione delle Google Calendar API. Tali API permetteranno al Bot di scaricare tutti gli eventi inseriti nel calendario per mostrare agli utenti i prossimi seminari.
+
+La prima cosa da fare è recarci sulla [Google Cloud Console](https://console.developers.google.com/ ""). Una volta autenticati, clicchiamo sulla freccetta in alto a sinistra come indicato dalla seguente immagine:
+
+<p align="center">
+  <img src="https://github.com/isislab-unisa/ISISLab-Bot/blob/main/imgs/calendar-setup/setup_1.PNG?raw=true" alt=""/>
+</p>
+
+</br>
+
+Procediamo adesso alla creazione di un nuovo progetto, definendo un nuovo nome per il progetto e cliccando su **Crea**
+
+<p align="center">
+  <img src="https://github.com/isislab-unisa/ISISLab-Bot/blob/main/imgs/calendar-setup/setup_2.PNG?raw=true" alt=""/>
+</p>
+
+--------------------
+
+<p align="center">
+  <img src="https://github.com/isislab-unisa/ISISLab-Bot/blob/main/imgs/calendar-setup/setup_3.PNG?raw=true" alt=""/>
+</p>
+
+</br>
+
+Una volta creato il nostro nuovo progetto, dobbiamo procedere con l'attivazione delle Google Calendar API. Per fare ciò, rechiamoci su **API e Servizi** nel menu sulla sinistra, come descritto dalle seguenti immagini e clicchiamo su **Abilita API e Servizi**
+
+<p align="center">
+  <img src="https://github.com/isislab-unisa/ISISLab-Bot/blob/main/imgs/calendar-setup/setup_4.PNG?raw=true" alt=""/>
+</p>
+
+--------------------
+
+<p align="center">
+  <img src="https://github.com/isislab-unisa/ISISLab-Bot/blob/main/imgs/calendar-setup/setup_5.PNG?raw=true" alt=""/>
+</p>
+
+</br>
+
+Utilizziamo ora la barra di ricerca in alto per cercare **Calendar** e procediamo quindi all'abilitazione della nostra API.
+
+<p align="center">
+  <img src="https://github.com/isislab-unisa/ISISLab-Bot/blob/main/imgs/calendar-setup/setup_6.PNG?raw=true" alt=""/>
+</p>
+
+--------------------
+
+<p align="center">
+  <img src="https://github.com/isislab-unisa/ISISLab-Bot/blob/main/imgs/calendar-setup/setup_7.PNG?raw=true" alt=""/>
+</p>
+
+</br>
+
+Fatto ciò non ci resta altro che creare delle nuove credenziali e prendere la API Key da inserire nel file di configurazione. Per fare ciò, ci basta andare 
+nella sezione **Credenziali**, **Crea credenziali** e selezionare **Chiave API**
+
+<p align="center">
+  <img src="https://github.com/isislab-unisa/ISISLab-Bot/blob/main/imgs/calendar-setup/setup_8.PNG?raw=true" alt=""/>
+</p>
+
+--------------------
+
+<p align="center">
+  <img src="https://github.com/isislab-unisa/ISISLab-Bot/blob/main/imgs/calendar-setup/setup_9.PNG?raw=true" alt=""/>
+</p>
+
+</br>
+
+Copiamo quindi la nostra API Key all'interno del file di configurazione del Bot ed il gioco è fatto. A questo punto, definiamo anche il **CalendarId** che sarà semplicemente la nostra mail di Google.
+
+<p align="center">
+  <img src="https://github.com/isislab-unisa/ISISLab-Bot/blob/main/imgs/calendar-setup/setup_10.PNG?raw=true" alt=""/>
+</p>
+
+</br>
